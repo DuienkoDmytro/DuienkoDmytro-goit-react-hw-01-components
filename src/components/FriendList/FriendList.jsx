@@ -8,20 +8,12 @@ export default function FriendList({ friends }) {
     </ul>
 }
 
-// FriendList.propTypes = {
-//    friends: PropTypes.shape({
-// name: PropTypes.string,
-// id: PropTypes.number,
-// avatar: PropTypes.string,
-// isOnline: PropTypes.bool,
-// }) 
-// };
-
-// friends: PropTypes.arrayOf(
-//   PropTypes.shape({
-//     name: PropTypes.string,
-// id: PropTypes.number,
-// avatar: PropTypes.string,
-// isOnline: PropTypes.bool,
-//   })
-// )
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(
+  PropTypes.shape({
+  name: PropTypes.string,
+  id: PropTypes.number,
+  avatar: PropTypes.string,
+  isOnline: PropTypes.bool,
+  })
+)}
