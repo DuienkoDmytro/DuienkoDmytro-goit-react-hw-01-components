@@ -22,10 +22,10 @@ export default function TransactionHistory({ items }) {
 }
 
 TransactionHistory.propTypes = {
-   transactions: PropTypes.shape({
+items: PropTypes.shape({
 id: PropTypes.number,
 type: PropTypes.string,
 amount: PropTypes.number,
 currency: PropTypes.string,
-}) 
+}).isRequired 
 };

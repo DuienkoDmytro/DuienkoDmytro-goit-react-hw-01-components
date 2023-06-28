@@ -19,6 +19,9 @@ export default function Statistics({ title, stats }) {
 
 Statistics.propTypes = {
     title: PropTypes.string,
+    stats: PropTypes.shape({
     label: PropTypes.string,
     percentage: PropTypes.number,
+    id: PropTypes.number,
+}).isRequired 
 };
